@@ -13,17 +13,13 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertTrue;
 
 public class NYNewsTest {
 
     static final String TAG = NYNewsTest.class.getSimpleName();
 
     @Test
-    public void testNews() throws Exception{
-
-
+    public void testNews() throws Exception {
         NewsServiceImple newsService = new NewsServiceImple();
         newsService.getNews(7, Constants.API_KEY, new Callback<NewsResponse>() {
             @Override
@@ -34,7 +30,7 @@ public class NYNewsTest {
 
                     switch (status) {
                         case "OK":
-                            assertEquals("No Results", false,response.body().getResults().isEmpty());
+                            assertEquals("No Results", false, response.body().getResults().isEmpty());
                             break;
                         case "ERROR":
                             Log.d(TAG, "Error Message: " + response.body().getErrors().get(0));
