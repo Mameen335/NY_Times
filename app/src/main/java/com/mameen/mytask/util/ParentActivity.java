@@ -50,11 +50,6 @@ public class ParentActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-//        getWindow().getDecorView().setOnSystemUiVisibilityChangeListener(
-//                new MyUiVisibilityChangeListener(ParentActivity.this));
-
-//        hideSystemUI();
-
     }
 
     protected boolean checkPermissions(@NonNull String[] permissions) {

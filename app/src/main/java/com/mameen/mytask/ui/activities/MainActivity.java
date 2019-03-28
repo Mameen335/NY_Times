@@ -96,7 +96,7 @@ public class MainActivity extends ParentActivity {
         if (AppAsistant.isConnected(MainActivity.this)) {
             srlNews.setRefreshing(true);
 
-            int period = 1;
+            int period = 7;
 
             newsService.getNews(period, Constants.API_KEY, new Callback<NewsResponse>() {
                 @Override
