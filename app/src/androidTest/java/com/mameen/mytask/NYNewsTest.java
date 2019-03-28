@@ -34,7 +34,7 @@ public class NYNewsTest {
 
                     switch (status) {
                         case "OK":
-                            assertEquals("No Results", true,response.body().getResults().isEmpty());
+                            assertEquals("No Results", false,response.body().getResults().isEmpty());
                             break;
                         case "ERROR":
                             Log.d(TAG, "Error Message: " + response.body().getErrors().get(0));
