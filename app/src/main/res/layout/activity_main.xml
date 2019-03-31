@@ -4,21 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="@dimen/_10sdp"
     android:id="@+id/parent"
     tools:context=".ui.activities.MainActivity">
 
 
-    <android.support.v4.widget.SwipeRefreshLayout
-        android:id="@+id/srlNews"
+    <FrameLayout
+        android:id="@+id/frg"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/rvNews"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
-
-    </android.support.v4.widget.SwipeRefreshLayout>
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_weight="1"/>
 
 </RelativeLayout>
